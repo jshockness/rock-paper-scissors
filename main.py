@@ -27,27 +27,31 @@ scissors = '''
 
 #Write your code below this line 👇
 import random
+# put images in list and use index to use them
+game_img =[rock, paper, scissors]
 
 player_choice = int(input("What do you choose? 0 for Rock, 1 for Paper, 2 for Scissors.\n "))
+print(game_img[player_choice])
 
 computer_choice = random.randint(0, 2)
+print(game_img[computer_choice])
 
 # Outputs drawing of rock, paper, and scissors for player and computer
-print(player_choice)
-if player_choice == 0:
-  print(rock)
-elif player_choice == 1:
-  print(paper)
-elif player_choice == 2:
-  print(scissors)
+# print(player_choice)
+# if player_choice == 0:
+#   print(rock)
+# elif player_choice == 1:
+#   print(paper)
+# elif player_choice == 2:
+#   print(scissors)
  
-print(computer_choice)
-if computer_choice == 0:
-  print(rock)
-elif computer_choice == 1:
-  print(paper)
-elif computer_choice == 2:
-  print(scissors)
+# print(computer_choice)
+# if computer_choice == 0:
+#   print(rock)
+# elif computer_choice == 1:
+#   print(paper)
+# elif computer_choice == 2:
+#   print(scissors)
 
 # Determines Winner Logic
 if player_choice >= 3 or player_choice < 0:
